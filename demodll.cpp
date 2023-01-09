@@ -36,10 +36,18 @@
 #include "jomtypes.h"
 #include "jomtypno.h"
 
+class SomeClass
+{
+public:
+	void doSomething() const {}
+};
+SomeClass* pSomeClass{};
+
 // Unicode/locale-aware replacements for C Run-Time library functions used here
 
 inline Character* mystrupr(Character string[])
 {
+	pSomeClass->doSomething();
 	return CharUpper(string);
 }
 
