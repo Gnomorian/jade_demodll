@@ -72,7 +72,7 @@ extern "C" DllExport BOOL CALLBACK
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID)
 {
 	switch (dwReason)
-	{
+	{  
 	case DLL_PROCESS_ATTACH:
 	case DLL_THREAD_ATTACH:
 	case DLL_PROCESS_DETACH:
